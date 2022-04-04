@@ -88,7 +88,14 @@ by.config(font = ("Inter", "10"))
 
 #tela 2 matrizes
 
-def mudartelaEM():
+def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
+
+    #===================================================
+    #
+    #                      backend2
+    #
+    #====================================================
+
     inicio.destroy()
     global matriz
     matriz = Tk()
@@ -97,19 +104,52 @@ def mudartelaEM():
     matriz['bg'] = '#C58282'
 
     widget1_2 = Frame(matriz)
-    widget1_2.grid()
+    widget1_2.grid(ipadx=185)
     widget1_2['bg'] = '#C58282'
+
+    widget2_2 = Frame(matriz)
+    widget2_2.grid(ipadx=185, ipady=30)
+    widget2_2['bg'] = '#C58282'
+
+    h6 = Label(widget1_2, text = "Insira os valores", foreground='white')
+    h6['bg'] = '#C58282'
+    h6["font"] = ("Inter", "25")
+
+    h7 = Label(widget2_2, text = "Tabela 1", foreground='white')
+    h7['bg'] = '#C58282'
+    h7["font"] = ("Inter", "25")
+    
+    h8 = Label(widget2_2, text = "Tabela 2", foreground='white')
+    h8['bg'] = '#C58282'
+    h8["font"] = ("Inter", "25")
+
+    #===================================================
+    #
+    #                     interface2
+    #
+    #====================================================
+
+    h6.pack()
+    h7.pack(side=LEFT, expand=YES)
+    h8.pack(side=LEFT, expand=YES)
+
+    #===================================================
+    #
+    #                      Console
+    #
+    #====================================================
+
+
 
 avi = Button(widget7_1, text="Avançar", width=10, command=mudartelaEM)
 avi.config(font = ("Inter", "15")) #Verifcador Tela 1
-
-
 
 #===================================================
 #
 #                     interface
 #
 #====================================================
+
 MX=inputx.get("1.0", "end")
 MY=inputy.get("1.0","end")
 
