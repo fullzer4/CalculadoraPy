@@ -20,3 +20,6 @@ elif My == "1:2":
 Mxa = np.array(dtype=[[MxaC1L1], [MxaC2L1]])
 Mya = np.array([[MyaC1L1], [MyaC2L1]])
 print(Mxa @ Mya)
+
+#https://schneiderfelipe.xyz/matrizes-e-vetores/ referencia
+#falho
