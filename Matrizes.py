@@ -90,6 +90,12 @@ by.config(font = ("Inter", "10"))
 
 def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
 
+    def getinputmx():
+        print("funfo")
+
+    def getinputmy():
+        print("funfo")
+
     #===================================================
     #
     #                      backend2
@@ -112,12 +118,16 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
     widget2_2['bg'] = '#C58282'
     
     widget3_2 = Frame(matriz)
-    widget3_2.grid(ipadx=180, ipady=30)
+    widget3_2.grid(ipadx=180, ipady=10)
     widget3_2['bg'] = '#C58282'
 
     widget4_2 = Frame(matriz)
     widget4_2.grid(ipadx=185)
     widget4_2['bg'] = '#C58282'
+
+    widget5_2 = Frame(matriz)
+    widget5_2.grid(ipadx=210, ipady=10)
+    widget5_2['bg'] = '#C58282'
 
     h6 = Label(widget1_2, text = "Insira os valores", foreground='white')
     h6['bg'] = '#C58282'
@@ -142,6 +152,12 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
     inputmx = Text(widget4_2, height=2, width=10)
     inputmy = Text(widget4_2, height=2, width=10)
 
+    bmx = Button(widget5_2, text="Ok", width=6, command=getinputmx)
+    bmx.config(font = ("Inter", "10"))
+
+    bmy = Button(widget5_2, text="Ok", width=6, command=getinputmy)
+    bmy.config(font = ("Inter", "10"))
+
 
 
 
@@ -158,6 +174,8 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
     h10.pack(side=LEFT, expand=YES)
     inputmx.pack(side=LEFT, expand=YES)
     inputmy.pack(side=LEFT, expand=YES)
+    bmx.pack(side=LEFT, expand=YES)
+    bmy.pack(side=LEFT, expand=YES)
 
     #===================================================
     #
