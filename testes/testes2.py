@@ -1,4 +1,3 @@
-from re import A
 import numpy as np
 
 AX= int(input("AX: "))
