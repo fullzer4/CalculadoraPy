@@ -23,7 +23,7 @@ def getinputy(): #fazer funcionar inicio
 
 inicio = Tk()
 inicio.title("Calculadora Matrizes")
-inicio.geometry("600x500+400+100")
+inicio.geometry("610x500+400+100")
 inicio['bg'] = '#C58282'
 
 widget1_1 = Frame(inicio)
@@ -100,7 +100,7 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
     global matriz
     matriz = Tk()
     matriz.title("Definir Matrizes")
-    matriz.geometry("600x500+400+100")
+    matriz.geometry("610x500+400+100")
     matriz['bg'] = '#C58282'
 
     widget1_2 = Frame(matriz)
@@ -108,8 +108,16 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
     widget1_2['bg'] = '#C58282'
 
     widget2_2 = Frame(matriz)
-    widget2_2.grid(ipadx=160, ipady=30)
+    widget2_2.grid(ipadx=140, ipady=30)
     widget2_2['bg'] = '#C58282'
+    
+    widget3_2 = Frame(matriz)
+    widget3_2.grid(ipadx=180, ipady=30)
+    widget3_2['bg'] = '#C58282'
+
+    widget4_2 = Frame(matriz)
+    widget4_2.grid(ipadx=185)
+    widget4_2['bg'] = '#C58282'
 
     h6 = Label(widget1_2, text = "Insira os valores", foreground='white')
     h6['bg'] = '#C58282'
@@ -123,6 +131,20 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
     h8['bg'] = '#C58282'
     h8["font"] = ("Inter", "25")
 
+    h9 = Label(widget3_2, text = "Valor X", foreground='white')
+    h9['bg'] = '#C58282'
+    h9["font"] = ("Inter", "20")
+
+    h10 = Label(widget3_2, text = "Valor Y", foreground='white')
+    h10['bg'] = '#C58282'
+    h10["font"] = ("Inter", "20")
+
+    inputmx = Text(widget4_2, height=2, width=10)
+    inputmy = Text(widget4_2, height=2, width=10)
+
+
+
+
     #===================================================
     #
     #                     interface2
@@ -132,6 +154,10 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
     h6.pack()
     h7.pack(side=LEFT, expand=YES)
     h8.pack(side=LEFT, expand=YES)
+    h9.pack(side=LEFT, expand=YES)
+    h10.pack(side=LEFT, expand=YES)
+    inputmx.pack(side=LEFT, expand=YES)
+    inputmy.pack(side=LEFT, expand=YES)
 
     #===================================================
     #
