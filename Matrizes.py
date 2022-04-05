@@ -104,11 +104,11 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
     matriz['bg'] = '#C58282'
 
     widget1_2 = Frame(matriz)
-    widget1_2.grid(ipadx=185)
+    widget1_2.grid(ipadx=192)
     widget1_2['bg'] = '#C58282'
 
     widget2_2 = Frame(matriz)
-    widget2_2.grid(ipadx=185, ipady=30)
+    widget2_2.grid(ipadx=160, ipady=30)
     widget2_2['bg'] = '#C58282'
 
     h6 = Label(widget1_2, text = "Insira os valores", foreground='white')
