@@ -51,8 +51,16 @@ widget6_1.grid(ipadx=255,ipady=10)
 widget6_1['bg'] = '#C58282'
 
 widget7_1 = Frame(inicio)
-widget7_1.grid()
+widget7_1.grid(ipady = 10)
 widget7_1['bg'] = '#C58282'
+
+widget8_1 = Frame(inicio)
+widget8_1.grid()
+widget8_1['bg'] = '#C58282'
+
+widget9_1 = Frame(inicio)
+widget9_1.grid()
+widget9_1['bg'] = '#C58282'
 
 h1 = Label(widget1_1, text = "Escolha Calculo", foreground='white')
 h1['bg'] = '#C58282'
@@ -129,25 +137,25 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
     widget5_2.grid(ipadx=210, ipady=10)
     widget5_2['bg'] = '#C58282'
 
-    h6 = Label(widget1_2, text = "Insira os valores", foreground='white')
-    h6['bg'] = '#C58282'
-    h6["font"] = ("Inter", "25")
-
-    h7 = Label(widget2_2, text = "Tabela 1", foreground='white')
-    h7['bg'] = '#C58282'
-    h7["font"] = ("Inter", "25")
-    
-    h8 = Label(widget2_2, text = "Tabela 2", foreground='white')
+    h8 = Label(widget1_2, text = "Insira os valores", foreground='white')
     h8['bg'] = '#C58282'
     h8["font"] = ("Inter", "25")
 
-    h9 = Label(widget3_2, text = "Valor X", foreground='white')
+    h9 = Label(widget2_2, text = "Tabela 1", foreground='white')
     h9['bg'] = '#C58282'
-    h9["font"] = ("Inter", "20")
-
-    h10 = Label(widget3_2, text = "Valor Y", foreground='white')
+    h9["font"] = ("Inter", "25")
+    
+    h10 = Label(widget2_2, text = "Tabela 2", foreground='white')
     h10['bg'] = '#C58282'
-    h10["font"] = ("Inter", "20")
+    h10["font"] = ("Inter", "25")
+
+    h11 = Label(widget3_2, text = "Valor X", foreground='white')
+    h11['bg'] = '#C58282'
+    h11["font"] = ("Inter", "20")
+
+    h12 = Label(widget3_2, text = "Valor Y", foreground='white')
+    h12['bg'] = '#C58282'
+    h12["font"] = ("Inter", "20")
 
     inputmx = Text(widget4_2, height=2, width=10)
     inputmy = Text(widget4_2, height=2, width=10)
@@ -167,11 +175,12 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
     #
     #====================================================
 
-    h6.pack()
-    h7.pack(side=LEFT, expand=YES)
-    h8.pack(side=LEFT, expand=YES)
+
+    h8.pack()
     h9.pack(side=LEFT, expand=YES)
     h10.pack(side=LEFT, expand=YES)
+    h11.pack(side=LEFT, expand=YES)
+    h12.pack(side=LEFT, expand=YES)
     inputmx.pack(side=LEFT, expand=YES)
     inputmy.pack(side=LEFT, expand=YES)
     bmx.pack(side=LEFT, expand=YES)
@@ -187,6 +196,14 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
 
 avi = Button(widget7_1, text="Avançar", width=10, command=mudartelaEM)
 avi.config(font = ("Inter", "15")) #Verifcador Tela 1
+
+h6 = Label(widget8_1, text = "Apenas Matrizes a cima de 2:2 e com o numero", foreground='white')
+h6['bg'] = '#C58282'
+h6["font"] = ("Inter", "18")
+
+h7 = Label(widget9_1, text = "de colunas sendo o mesmo ex: 2:2 x 2:3; 3:2 x 3:4", foreground='white')
+h7['bg'] = '#C58282'
+h7["font"] = ("Inter", "18")
 
 #===================================================
 #
@@ -208,6 +225,8 @@ h5.pack(side=LEFT, expand=YES)
 bx.pack(side=LEFT, expand=YES)
 by.pack(side=LEFT, expand=YES)
 avi.pack()
+h6.pack()
+h7.pack()
 #pagina inicial
 
 mainloop()
