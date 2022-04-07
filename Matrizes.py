@@ -69,7 +69,7 @@ h1 = Label(widget1_1, text = "Escolha Calculo", foreground='white')
 h1['bg'] = '#C58282'
 h1["font"] = ("Inter", "25")
 
-bmult = Button(widget2_1, text="Multiplicar", width=10)
+bmult = Button(widget2_1, text="Multiplicar", width=10, command=verificarcalculo)
 bmult.config(font = ("Inter", "20"))
 
 h2 = Label(widget3_1, text = "Tipo Matriz X", foreground='white')
