@@ -1,0 +1,5 @@
+Quando botao multiplicacao clickado selecionar o calculo
+
+Fazer uma funcao para verificar as matrizes selecionadas e relizar o calculo coletando os numeros
+
+Fazer com que o texto e a variavel mude no input armazenando ela em C1L1

@@ -7,6 +7,9 @@ import math
 #
 #===================================================
 
+def verificarcalculo():
+    print("funfo")
+
 def getinputx(): #fazer funcionar inicio
     MX=inputx.get("1.0","end")
     print("Valor de x = ",MX)
@@ -197,7 +200,7 @@ def mudartelaEM(): #ponto de parada dia 04/04 seguir !!!!!!!
 avi = Button(widget7_1, text="Avançar", width=10, command=mudartelaEM)
 avi.config(font = ("Inter", "15")) #Verifcador Tela 1
 
-h6 = Label(widget8_1, text = "Apenas Matrizes a cima de 2:2 e com o numero", foreground='white')
+h6 = Label(widget8_1, text = "Apenas Matrizes acima de 2:2 e com o número", foreground='white')
 h6['bg'] = '#C58282'
 h6["font"] = ("Inter", "18")
 
