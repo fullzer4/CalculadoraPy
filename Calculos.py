@@ -1,1 +1,1 @@
-#soma subtrair multiplicacao dividir
+#soma subtrair multiplicacao dividir raiz potencia
