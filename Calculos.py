@@ -1,0 +1,1 @@
+#soma subtrair multiplicacao dividir
